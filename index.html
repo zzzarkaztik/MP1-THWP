@@ -32,8 +32,12 @@
         color: white;
         border: none;
       }
+      .card:hover {
+        transform: scale(1.05);
+      }
       .card {
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        transition: transform 150ms;
       }
       #testimonials {
         background: linear-gradient(30deg, #128eed, #ff696c);
@@ -506,10 +510,10 @@
       <div class="container-fluid">
         <div class="row justify-content-around gy-5">
           <div class="col-lg-4">
-            <div class="card">
+            <div class="card d-flex flex-column h-100">
               <div class="card-header">Thwp Turned Our World Upside Down!</div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
+              <div class="card-body d-flex flex-column">
+                <blockquote class="blockquote mb-0 flex-grow-1">
                   <p class="mb-4 fs-6">
                     Unexpectedly finding love, Thwp completely changed the game
                     for us; the Calendar Meetup feature turned ordinary moments
@@ -525,12 +529,12 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card">
+            <div class="card d-flex flex-column h-100">
               <div class="card-header">
                 Thwp's Web of Connection Worked its Magic!
               </div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
+              <div class="card-body d-flex flex-column">
+                <blockquote class="blockquote mb-0 flex-grow-1">
                   <p class="mb-4 fs-6">
                     As a busy professional, I never thought I'd find time for
                     love, but Thwp not only made it possible but also enjoyable;
@@ -546,10 +550,10 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card">
+            <div class="card d-flex flex-column h-100">
               <div class="card-header">More Than Just Swipes!</div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
+              <div class="card-body d-flex flex-column">
+                <blockquote class="blockquote mb-0 flex-grow-1">
                   <p class="mb-4 fs-6">
                     In a sea of dating apps, Thwp stands out; the emphasis on
                     Dating Etiquette created a respectful atmosphere that's hard
