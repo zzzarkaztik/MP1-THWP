@@ -114,20 +114,40 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item text-end" href="#">My Profile</a>
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
+                    >My Profile</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item text-end" href="#"
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
                     >Account Settings</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-end" href="#"
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
                     >Privacy Settings</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-end" href="#">Help & Support</a>
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
+                    >Help & Support</a
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
@@ -166,7 +186,12 @@
       <div class="offcanvas-body mx-0 px-2">
         <div class="row align-items-center">
           <!--ANGIE-->
-          <a href="#" class="sidebar-item">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#chat-modal"
+            class="sidebar-item"
+          >
             <div class="row align-items-center py-2">
               <div class="col-3">
                 <img
@@ -178,7 +203,7 @@
               <div class="col-8 profile-details">
                 <h4 class="my-0">Angie, 33</h4>
                 <span class="badge rounded-pill text-bg-warning">NEW</span>
-                <span><b>I'm free this Saturday. Maybe could...</b></span>
+                <span><b>I'm free this Saturday. Maybe, we could...</b></span>
               </div>
             </div>
           </a>
@@ -235,6 +260,23 @@
             </div>
           </a>
         </div>
+        <div class="row align-items-center">
+          <a href="#" class="sidebar-item disabled">
+            <div class="row align-items-center py-2">
+              <div class="col-3">
+                <img
+                  src="img/profiles/unknown.jpg"
+                  alt="empty profile picture]"
+                  class="profile-pic img-fluid"
+                />
+              </div>
+              <div class="col-8 profile-details">
+                <h4 class="my-0">THWP Profile, ??</h4>
+                <span>Contact Unavaible</span>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <!-- END SIDEBAR -->
@@ -274,7 +316,12 @@
                 Embark on a journey where every thwip leads to a potential love
                 story.
               </p>
-              <a href="#" class="btn carousel-btn rounded-pill mb-3">
+              <a
+                href="#"
+                class="btn rounded-pill mb-3"
+                data-bs-toggle="modal"
+                data-bs-target="notReadyModal"
+              >
                 Download the App
               </a>
             </div>
@@ -336,7 +383,12 @@
                 Start your journey to meaningful connections with a single
                 swipe.
               </p>
-              <a href="#" class="btn carousel-btn rounded-pill mb-3">
+              <a
+                href="#"
+                class="btn rounded-pill mb-3"
+                data-bs-toggle="modal"
+                data-bs-target="#notReadyModal"
+              >
                 Thwip Now!
               </a>
             </div>
@@ -534,6 +586,134 @@
       </div>
     </section>
     <!-- END TESTIMONIALS -->
+
+    <!-- CHAT MODAL-->
+    <div
+      class="modal fade"
+      id="chat-modal"
+      tabindex="-1"
+      aria-labelledby="chat-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="img/profiles/Angie.jpg"
+              alt="picture of angie"
+              class="chatbox-pic img-fluid"
+            />
+            <h1 class="modal-title fs-5 ms-3" id="chat-modalLabel">Angie</h1>
+            <button
+              type="button"
+              class="btn-close me-1"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="chatbox">
+              <p class="chat1">Hi! I really like your picture!</p>
+              <div class="clear"></div>
+              <p class="chat2">
+                Thanks! I love yours, btw. You look busy with work.
+              </p>
+              <div class="clear"></div>
+              <p class="chat1">
+                I do. Thank goodness THWP is for busy people like us.
+              </p>
+              <div class="clear"></div>
+              <p class="chat2">Loving this app. It's lovable with you in it.</p>
+              <div class="clear"></div>
+              <p class="chat1">LOL. Where you at right now? Work?</p>
+              <div class="clear"></div>
+              <p class="chat2">Yeah. I'm near Rosenberg. How about you?</p>
+              <div class="clear"></div>
+              <p class="chat1">That's just a 15-min drive from here!</p>
+              <div class="clear"></div>
+              <p class="chat2">Nice! You free today?</p>
+              <div class="clear"></div>
+              <p class="chat1">Sadly, no.</p>
+              <div class="clear"></div>
+              <p class="chat2">Bummer.</p>
+              <div class="clear"></div>
+              <p class="chat1">I'm free this Saturday. Maybe, we could...</p>
+              <div class="clear"></div>
+              <label for="date-date" class="text-light">Plan your date:</label>
+              <input
+                type="date"
+                class="form-control bg-primary text-light input-light"
+                id="date-date"
+              />
+            </div>
+            <form>
+              <label for="message-text"></label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="message-text"
+                  aria-describedby="send-button"
+                  placeholder="Type your message here."
+                />
+                <div class="input-group-append">
+                  <a href="#" class="btn input-group-text"
+                    ><span
+                      class="material-symbols-rounded align-middle"
+                      id="send-button"
+                      >send</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <span><sup>Powered by: Chatinger</sup></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NOT READY MODAL -->
+    <div
+      class="modal fade"
+      id="notReadyModal"
+      tabindex="-1"
+      aria-labelledby="notReadyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="notReadyModalLabel">
+              Oops! Not Ready Yet
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              We're currently working on some exciting features to enhance your
+              experience on our platform. Stay tuned for updates and in the
+              meantime, happy thwipping!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- START FOOTER -->
     <footer>
       <div class="container footer mt-4" id="footer-container">
@@ -541,18 +721,60 @@
           <div class="col-lg-3 col-md-4 col-sm-6">
             <span class="fs-5"><strong>Legal</strong></span>
             <ul>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Intellectual Property</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Intellectual Property</a
+                >
+              </li>
             </ul>
           </div>
           <hr class="d-block d-sm-none my-3" />
           <div class="col-lg-3 col-md-4 col-sm-6">
             <span class="fs-5"><strong>Careers</strong></span>
             <ul>
-              <li><a href="#">Careers Portal</a></li>
-              <li><a href="#">Tech Blog</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Careers Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Tech Blog</a
+                >
+              </li>
             </ul>
           </div>
           <hr class="d-block d-md-none my-3" />
@@ -595,10 +817,17 @@
           <hr class="d-block d-lg-none my-3" />
           <div class="col-lg-3 col-md-4 col-sm-6">
             <ul class="text-secondary">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#mission">Mission</a></li>
-              <li><a href="#vision">Vision</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#mission">Mission</a></li>
+              <li><a href="index.html#vision">Vision</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -608,9 +837,25 @@
         <div class="row">
           <div>
             <p>
-              <a href="#">FAQ</a> | <a href="#">Safety Tips</a> |
-              <a href="#">Terms</a> | <a href="#">Cookie</a> |
-              <a href="#">Privacy</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >FAQ</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Safety Tips</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Terms</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Cookie</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Privacy</a
+              >
             </p>
             <p>
               ©2023 ZZZarkaztik Graphics by Arvs Villalobos, All Rights

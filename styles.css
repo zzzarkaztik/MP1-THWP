@@ -1,14 +1,18 @@
-#hero a.btn {
+a.btn {
   background: linear-gradient(30deg, #128eed, #ff696c);
   color: white;
   border: none;
   transition: transform 100ms;
 }
-#hero a.btn:hover {
+a.btn:hover {
   transform: scale(1.05);
   background: linear-gradient(30deg, #ff696c, #128eed);
   text-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  color: white;
+}
+a.btn:active {
+  color: white;
 }
 .card:hover {
   transform: scale(1.05);
@@ -135,6 +139,11 @@ a.sidebar-item:hover {
   background: linear-gradient(30deg, #128eed, #ff696c);
   color: white;
 }
+a.sidebar-item.disabled {
+  color: #00000033;
+  pointer-events: none;
+  cursor: default;
+}
 #logoutbtn {
   font-weight: 500;
 }
@@ -155,7 +164,7 @@ a.sidebar-item:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   padding-top: 70px;
 }
 /* HEAVY SIDEBAR CONTENT */
@@ -189,6 +198,10 @@ a.sidebar-item:hover {
   width: 80px;
   border-radius: 100%;
   margin: auto;
+}
+.chatbox-pic {
+  width: 50px;
+  border-radius: 100%;
 }
 .card {
   box-shadow: 0 0 30px #00000088;
@@ -229,7 +242,7 @@ a.sidebar-item:hover {
 }
 .card-footer i {
   font-size: 20px;
-  color: #ff696c;
+  color: grey;
   padding: 0 10px;
 }
 #matches-cards > h1 {
@@ -311,11 +324,57 @@ a.sidebar-item:hover {
 }
 .modal-footer a {
   text-decoration: none;
-  color: #ff696c;
   font-weight: 500;
 }
 .modal-footer a:hover {
   text-decoration: none;
-  color: #128eed;
   font-weight: 500;
+}
+.modal-body h2 {
+  font-weight: 900;
+}
+#chat-modal .input-wrapper {
+  position: relative;
+}
+
+#chat-modal .input-wrapper input {
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+#chat-modal .input-wrapper .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.chat1,
+.chat2 {
+  max-width: 80%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 0 0 20px #ffffff33;
+}
+
+.chat1 {
+  background-color: #ff696c;
+  float: left;
+}
+
+.chat2 {
+  background-color: #128eed;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+#chat-modal .modal-body {
+  background: linear-gradient(30deg, #ff696c, #128eed);
 }
