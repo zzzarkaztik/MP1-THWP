@@ -43,14 +43,15 @@
         </a>
         <button
           class="navbar-toggler"
-          type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="material-symbols-rounded"> menu </span>
+          <span class="material-symbols-rounded text-light align-middle">
+            menu
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -187,7 +188,8 @@
                 </div>
                 <div class="col-8 profile-details">
                   <h4 class="my-0">Angie, 33</h4>
-                  <span>Be the first one to say Hi!</span>
+                  <span class="badge rounded-pill text-bg-warning">NEW</span>
+                  <span><b>I'm free this Saturday. Maybe could...</b></span>
                 </div>
               </div>
             </a>
@@ -246,6 +248,7 @@
           </div>
         </div>
       </div>
+      <!-- MESSAGE FLOATING BUTTON -->
       <span
         id="sidebar-button"
         class="material-symbols-rounded d-block d-sm-none"
@@ -264,8 +267,12 @@
       >
         <h1 class="my-5 text-light display-1">YOUR MATCHES</h1>
         <div class="row mb-5 gy-5 justify-content-center">
-          <div class="col-md-4 col-xl-3">
-            <div class="card h-100">
+          <div class="col-md-6 col-xl-3 col-lg-4">
+            <div
+              class="card h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#angieModal"
+            >
               <div class="img1">
                 <img
                   src="img/profile-backgrounds/2.png"
@@ -290,8 +297,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-xl-3">
-            <div class="card h-100">
+          <div class="col-md-6 col-xl-3 col-lg-4">
+            <div
+              class="card h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#christineModal"
+            >
               <div class="img1">
                 <img
                   src="img/profile-backgrounds/1.png"
@@ -316,8 +327,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-xl-3">
-            <div class="card h-100">
+          <div class="col-md-6 col-xl-3 col-lg-4">
+            <div
+              class="card h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#kaylaModal"
+            >
               <div class="img1">
                 <img
                   src="img/profile-backgrounds/3.png"
@@ -342,8 +357,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-xl-3">
-            <div class="card h-100">
+          <div class="col-md-6 col-xl-3 col-lg-4">
+            <div
+              class="card h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#antonioModal"
+            >
               <div class="img1">
                 <img
                   src="img/profile-backgrounds/4.png"
@@ -371,7 +390,238 @@
         </div>
       </div>
     </section>
-    <!-- START FOOTER (commented out for this page)-->
+    <!-- START MODALS -->
+    <!-- ANGIE -->
+    <div
+      class="modal fade"
+      id="angieModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header with-picture" id="headerAngie">
+            <img
+              src="img/profiles/Angie.jpg"
+              alt="angie's picture"
+              class="img-fluid border-radius"
+            />
+            <span
+              id="sidebar-hide"
+              class="material-symbols-rounded btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              close
+            </span>
+          </div>
+          <div class="modal-body">
+            <h2>Angie, 33</h2>
+            <hr />
+            <span><b>Bio</b></span>
+            <p>
+              Exploring life's tapestry with a dash of spice. Asian flair,
+              humor, and a love for adventures. Let's create our own story on
+              Thwp! 🌏✨
+            </p>
+            <hr />
+            <span><b>Additional Information</b></span>
+            <ul>
+              <li><b>Zodiac Sign:</b> Leo</li>
+              <li><b>Height:</b> 5'6"</li>
+              <li>
+                <b>Interests:</b> Exploring, Asian culture, humor, adventures
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#"
+              >Message Me!
+              <span class="material-symbols-rounded align-middle">
+                send
+              </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CHRISTINE -->
+    <div
+      class="modal fade"
+      id="christineModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header with-picture" id="headerChristine">
+            <img
+              src="img/profiles/Christine.jpg"
+              alt="Christine's picture"
+              class="img-fluid border-radius"
+            />
+            <span
+              id="sidebar-hide"
+              class="material-symbols-rounded btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              close
+            </span>
+          </div>
+          <div class="modal-body">
+            <h2>Christine, 23</h2>
+            <hr />
+            <span><b>Bio</b></span>
+            <p>
+              Dreamer by day, stargazer by night. Seeking a co-pilot for cosmic
+              adventures. Let's dive into deep talks and dance under the stars!
+              🌌💫 #ThwpMagic
+            </p>
+            <hr />
+            <span><b>Additional Information</b></span>
+            <ul>
+              <li><b>Zodiac Sign:</b> Pisces</li>
+              <li><b>Height:</b> 5'4"</li>
+              <li>
+                <b>Interests:</b> Astronomy, deep conversations, stargazing,
+                dancing
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#"
+              >Message Me!
+              <span class="material-symbols-rounded align-middle">
+                send
+              </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="kaylaModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header with-picture" id="headerKayla">
+            <img
+              src="img/profiles/Kayla.jpg"
+              alt="Kayla's picture"
+              class="img-fluid border-radius"
+            />
+            <span
+              id="sidebar-hide"
+              class="material-symbols-rounded btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              close
+            </span>
+          </div>
+          <div class="modal-body">
+            <h2>Kayla, 21</h2>
+            <hr />
+            <span><b>Bio</b></span>
+            <p>
+              Adventurous spirit with a heart full of curiosity. On a quest for
+              laughter, love, and spontaneous escapades. Ready for a Thwp
+              adventure? 🚀💖 #ThwpMagic
+            </p>
+            <hr />
+            <span><b>Additional Information</b></span>
+            <ul>
+              <li><b>Zodiac Sign:</b> Sagittarius</li>
+              <li><b>Height:</b> 5'6"</li>
+              <li>
+                <b>Interests:</b> Adventure, laughter, love, spontaneous
+                escapades
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#"
+              >Message Me!
+              <span class="material-symbols-rounded align-middle">
+                send
+              </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="antonioModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header with-picture" id="headerAntonio">
+            <img
+              src="img/profiles/Antonio.jpg"
+              alt="Antonio's picture"
+              class="img-fluid border-radius"
+            />
+            <span
+              id="sidebar-hide"
+              class="material-symbols-rounded btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              close
+            </span>
+          </div>
+          <div class="modal-body">
+            <h2>Antonio, 27</h2>
+            <hr />
+            <span><b>Bio</b></span>
+            <p>
+              Explorer of life's mysteries, seeking a partner for thrilling
+              journeys and late-night conversations. Let's embark on a Thwp
+              adventure together! 🌍✨ #ThwpMagic
+            </p>
+            <hr />
+            <span><b>Additional Information</b></span>
+            <ul>
+              <li><b>Zodiac Sign:</b> Gemini</li>
+              <li><b>Height:</b> 6'0"</li>
+              <li>
+                <b>Interests:</b> Exploring, thrilling journeys, late-night
+                conversations
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#"
+              >Message Me!
+              <span class="material-symbols-rounded align-middle">
+                send
+              </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START FOOTER -->
     <footer>
       <div class="container footer mt-5" id="footer-container">
         <div class="row">
