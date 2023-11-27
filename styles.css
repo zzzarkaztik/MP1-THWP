@@ -160,6 +160,7 @@ a.sidebar-item:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-bottom: 50px;
+  padding-top: 70px;
 }
 /* HEAVY SIDEBAR CONTENT */
 #offcanvasScrolling {
@@ -170,8 +171,8 @@ a.sidebar-item:hover {
 #sidebar-button {
   position: fixed;
   color: #ffffff33;
-  margin: 70px 0px 0px 10px;
   z-index: 1000;
+  margin-left: 10px;
 }
 #sidebar-button:hover {
   color: #ffffff;
@@ -237,9 +238,10 @@ a.sidebar-item:hover {
 }
 .socials i {
   font-size: 20px;
-  color: #128eed;
+  color: #ff696c;
   padding: 0 10px;
 }
-#card-container {
-  padding-top: 50px;
+#card-container > h1 {
+  font-weight: 900;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
