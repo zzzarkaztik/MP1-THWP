@@ -198,7 +198,7 @@ a.sidebar-item:hover {
   box-shadow: 0 0 30px #00000088;
   overflow: hidden;
   transition: 100ms;
-  margin: 0 20px 0 20px;
+  margin: 0 10px 0 10px;
 }
 .img1 img {
   width: 100%;
@@ -218,30 +218,29 @@ a.sidebar-item:hover {
 .card:hover .img2 img {
   border-color: #128eed;
 }
-.main-text {
+#matchescards .card-body {
   padding: 20px 0;
   text-align: center;
 }
-.main-text h2 {
+#matchescards .card-body h2 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 20px;
   margin: 0 0 20px;
 }
-.main-text p {
+#matchescards .card-body p {
   font-size: 16px;
   padding: 0 35px;
 }
-.socials {
-  text-align: center;
+.card-footer {
   padding-bottom: 20px;
 }
-.socials i {
+.card-footer i {
   font-size: 20px;
   color: #ff696c;
   padding: 0 10px;
 }
-#card-container > h1 {
+#matches-cards > h1 {
   font-weight: 900;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
