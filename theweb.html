@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="img/fontawesome-free-5.15.4-web/css/all.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="img/icon.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>THWP: Web-up Your Hearts</title>
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg d-flex align-items-center">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/thwp-logo-no-shadow.svg"
+            alt="thwp logo"
+            height="30"
+            class="align-items-end mb-0.5"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-rounded text-light"> menu </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matches.html">Matches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Web of Love</a
+              >
+            </li>
+          </ul>
+          <hr class="d-lg-none my-2" />
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 leftnavbar">
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+                href="#"
+                >Messages</a
+              >
+            </li>
+            <li class="nav-item divider d-none d-sm-block"></li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <!-- DROPDOWN MENU -->
+                My Account
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                id="myaccount-dropdown"
+              >
+                <li id="profile-account">
+                  <a href="#" class="dropdown-item disabled">
+                    <div class="text-center">
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="img/profiles/Olvo.jpg"
+                          alt="profile pic of olvo"
+                          class="img-fluid"
+                          id="profile-pic"
+                        />
+                      </div>
+
+                      <p class="my-0 py-0 fs-4">
+                        <strong>Olvo Aladeen</strong>
+                      </p>
+                      <span class="badge rounded-pill text-bg-success"
+                        >Active</span
+                      >
+                    </div></a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
+                    >My Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
+                    >Account Settings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
+                    >Privacy Settings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-end"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#notReadyModal"
+                    >Help & Support</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-end" id="logoutbtn" href="#"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <section
+      id="theweb-neutral-body"
+      class="justify-content-center text-center"
+    >
+      <h1 class="my-5 text-light display-1">THE WEB OF LOVE</h1>
+      <div class="container-fluid p-auto">
+        <div id="theweb-carousel" class="carousel slide">
+          <div class="carousel-inner py-5">
+            <div class="carousel-item active">
+              <div class="card-wrapper col-lg-4 m-auto">
+                <div
+                  class="card text-bg-secondary h-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#angieModal"
+                >
+                  <div class="img1">
+                    <img
+                      src="img/profile-backgrounds/3.png"
+                      alt="vector art background"
+                    />
+                  </div>
+                  <div class="img2">
+                    <img src="img/profiles/Anabeth.jpg" alt="anabeth's photo" />
+                  </div>
+                  <div class="card-body">
+                    <h2>Anabeth, 31</h2>
+                    <p>
+                      Embarking on the intricate mosaic of life with a touch of
+                      spice. Infused with an Asian flair, humor, and a love for
+                      adventures. Let's shape our own narrative on Thwp! 🌟🌏
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#thwipped"
+                      href="#"
+                      >THWIP</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-wrapper col-lg-4 m-auto">
+                <div
+                  class="card text-bg-secondary h-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#angieModal"
+                >
+                  <div class="img1">
+                    <img
+                      src="img/profile-backgrounds/5.png"
+                      alt="vector art background"
+                    />
+                  </div>
+                  <div class="img2">
+                    <img src="img/profiles/Holden.jpg" alt="holden's photo" />
+                  </div>
+                  <div class="card-body">
+                    <h2>Holden, 37</h2>
+                    <p>
+                      Navigating the rich tapestry of life with a hint of
+                      flavor. Infused with an Asian twist, humor, and a fondness
+                      for adventures. Let's weave our own tale on Thwp! 🌏✨
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#thwipped"
+                      href="#"
+                      >THWIP</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-wrapper col-lg-4 m-auto">
+                <div
+                  class="card text-bg-secondary h-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#angieModal"
+                >
+                  <div class="img1">
+                    <img
+                      src="img/profile-backgrounds/1.png"
+                      alt="vector art background"
+                    />
+                  </div>
+                  <div class="img2">
+                    <img src="img/profiles/Yelena.jpg" alt="Yelena's photo" />
+                  </div>
+                  <div class="card-body">
+                    <h2>Yelena, 28</h2>
+                    <p>
+                      Embarking on life's intricate journey with a touch of
+                      zest. Infused with an Asian touch, laughter, and a passion
+                      for exploration. Let's craft our unique narrative on Thwp!
+                      🌏✨
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#thwipped"
+                      href="#"
+                      >THWIP</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#theweb-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#theweb-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMENT SUCCESS -->
+    <div
+      class="modal fade"
+      id="thwipped"
+      aria-hidden="true"
+      aria-labelledby="thwippedLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="thwippedLabel">Thwipped</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Successfully THWIPPED!</div>
+          <div class="modal-footer">
+            <a
+              href="#"
+              class="btn rounded-pill"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Confirm
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START FOOTER -->
+    <footer>
+      <div class="container footer mt-4" id="footer-container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <span class="fs-5"><strong>Legal</strong></span>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Intellectual Property</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="d-block d-sm-none my-3" />
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <span class="fs-5"><strong>Careers</strong></span>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Careers Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Tech Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="d-block d-md-none my-3" />
+          <div class="col-lg-3 col-md-4 col-sm-6" id="socials">
+            <span class="fs-5"><strong>Social</strong></span>
+            <ul class="list-unstyled d-flex fs-4" id="socmed-icon-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/maynard-arvin-villalobos-lpt-7a7aa3242/"
+                  target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/zzzarkaztik" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/maynard-arvin-villalobos-lpt-7a7aa3242/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/zzzarkaztik" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCMKiL3I0-ga4qgZJaMkCieA"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <hr class="d-block d-lg-none my-3" />
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <ul class="text-secondary">
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#mission">Mission</a></li>
+              <li><a href="index.html#vision">Vision</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#notReadyModal"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4" />
+      <div class="container text-center text-secondary" id="footer-footer">
+        <div class="row">
+          <div>
+            <p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >FAQ</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Safety Tips</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Terms</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Cookie</a
+              >
+              |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#notReadyModal"
+                >Privacy</a
+              >
+            </p>
+            <p>
+              ©2023 ZZZarkaztik Graphics by Arvs Villalobos, All Rights
+              Reserved.
+            </p>
+            <span
+              ><sup
+                >Thwp, conceptualized by ZZZarkaztik Graphics for academic and
+                personal use, is not for commercial purposes. Any resemblance to
+                real entities is coincidental. "Thwip" is a trademark of Marvel.
+                ZZZarkaztik Graphics assumes no responsibility for unintended
+                use.</sup
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>

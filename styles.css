@@ -212,6 +212,7 @@ a.sidebar-item.disabled {
 }
 .img1 img {
   width: 100%;
+  height: 200px;
 }
 .img2 img {
   position: relative;
@@ -228,10 +229,12 @@ a.sidebar-item.disabled {
 .card:hover .img2 img {
   border-color: #128eed;
 }
-#matchescards .card-body {
+#matches-cards .card-body,
+#web-carousel .card-body {
   text-align: center;
 }
-#matchescards .card-body h2 {
+#matches-cards .card-body h2,
+#web-carousel .card-body h2 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 20px;
@@ -239,13 +242,15 @@ a.sidebar-item.disabled {
 }
 .card-footer {
   padding-bottom: 20px;
+  text-align: center;
 }
 .card-footer i {
   font-size: 20px;
   color: grey;
   padding: 0 10px;
 }
-#matches-cards > h1 {
+#matches-cards > h1,
+#theweb-neutral-body > h1 {
   font-weight: 900;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -358,7 +363,7 @@ a.sidebar-item.disabled {
   margin: 5px;
   border-radius: 25px;
   color: white;
-  box-shadow: 0 0 20px #ffffff33;
+  box-shadow: 0 0 10px #ffffff55;
 }
 
 .chat1 {
@@ -377,4 +382,32 @@ a.sidebar-item.disabled {
 
 #chat-modal .modal-body {
   background: linear-gradient(30deg, #ff696c, #128eed);
+}
+#theweb-neutral-body {
+  background-image: url("img/web-branch-background.jpg"); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+button.carousel-control-prev,
+button.carousel-control-next {
+  color: black;
+}
+.card-footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+.card-footer a:hover {
+  color: #128eed;
+}
+.carousel-item .card-body > p {
+  height: 5rem;
+}
+.carousel-item .card-body > h2 {
+  font-weight: 900;
 }
