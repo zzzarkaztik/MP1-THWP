@@ -58,7 +58,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Matches</a>
+              <a class="nav-link" href="matches.html">Matches</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Web of Love</a>
@@ -67,7 +67,14 @@
           <hr class="d-lg-none my-2" />
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 leftnavbar">
             <li class="nav-item">
-              <a class="nav-link" href="#">Messages</a>
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+                href="#"
+                >Messages</a
+              >
             </li>
             <li class="nav-item divider d-none d-sm-block"></li>
             <li class="nav-item">
@@ -136,9 +143,104 @@
       </div>
     </nav>
     <!-- END NAVBAR  -->
+    <!-- START SIDEBAR -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header py-2">
+        <h2 class="offcanvas-title" id="offcanvasScrollingLabel">Messages</h2>
+        <span
+          id="sidebar-hide"
+          class="material-symbols-rounded"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          minimize
+        </span>
+      </div>
+      <hr class="mb-0" />
+
+      <div class="offcanvas-body mx-0">
+        <div class="row align-items-center">
+          <!--ANGIE-->
+          <a href="#" class="sidebar-item">
+            <div class="row align-items-center py-2">
+              <div class="col-3">
+                <img
+                  src="img/profiles/Angie.jpg"
+                  alt="picture of angie"
+                  class="profile-pic img-fluid"
+                />
+              </div>
+              <div class="col-8 profile-details">
+                <h4 class="my-0">Angie, 33</h4>
+                <span>Be the first one to say Hi!</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="row align-items-center">
+          <!--CHRISTINE-->
+          <a href="#" class="sidebar-item">
+            <div class="row align-items-center py-2">
+              <div class="col-3">
+                <img
+                  src="img/profiles/Christine.jpg"
+                  alt="picture of Christine"
+                  class="profile-pic img-fluid"
+                />
+              </div>
+              <div class="col-8 profile-details">
+                <h4 class="my-0">Christine, 23</h4>
+                <span>Be the first one to say Hi!</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="row align-items-center">
+          <a href="#" class="sidebar-item">
+            <div class="row align-items-center py-2">
+              <div class="col-3">
+                <img
+                  src="img/profiles/Kayla.jpg"
+                  alt="picture of Kayla"
+                  class="profile-pic img-fluid"
+                />
+              </div>
+              <div class="col-8 profile-details">
+                <h4 class="my-0">Kayla, 21</h4>
+                <span>Be the first one to say Hi!</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="row align-items-center">
+          <a href="#" class="sidebar-item">
+            <div class="row align-items-center py-2">
+              <div class="col-3">
+                <img
+                  src="img/profiles/Antonio.jpg"
+                  alt="picture of Antonio"
+                  class="profile-pic img-fluid"
+                />
+              </div>
+              <div class="col-8 profile-details">
+                <h4 class="my-0">Antonio, 27</h4>
+                <span>Be the first one to say Hi!</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END SIDEBAR -->
 
     <!-- START HERO -->
-    <section id="hero">
+    <section id="hero" class="pt-5">
       <div
         class="carousel slide carousel-fade border-0"
         id="dating-hero"
@@ -514,6 +616,15 @@
               ©2023 ZZZarkaztik Graphics by Arvs Villalobos, All Rights
               Reserved.
             </p>
+            <span
+              ><sup
+                >Thwp, conceptualized by ZZZarkaztik Graphics for academic and
+                personal use, is not for commercial purposes. Any resemblance to
+                real entities is coincidental. "Thwip" is a trademark of Marvel.
+                ZZZarkaztik Graphics assumes no responsibility for unintended
+                use.</sup
+              ></span
+            >
           </div>
         </div>
       </div>

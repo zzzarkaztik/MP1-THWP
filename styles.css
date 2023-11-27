@@ -2,6 +2,12 @@
   background: linear-gradient(30deg, #128eed, #ff696c);
   color: white;
   border: none;
+  transition: transform 100ms;
+}
+#hero a.btn:hover {
+  transform: scale(1.05);
+  text-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
 .card:hover {
   transform: scale(1.05);
@@ -87,11 +93,12 @@ body {
 }
 .navbar {
   background: linear-gradient(30deg, #128eed, #ff696c);
-  position: fixed;
-  z-index: 1000;
+  position: fixed !important; /* couldn't find style conflict. code needs important. */
+  z-index: 1030;
   width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
 #mission {
   background: linear-gradient(
     30deg,
@@ -122,7 +129,8 @@ body {
 .navbar-nav .nav-item {
   color: #fff;
 }
-.dropdown-menu a:hover {
+.dropdown-menu a:hover,
+a.sidebar-item:hover {
   background: linear-gradient(30deg, #128eed, #ff696c);
   color: white;
 }
@@ -143,4 +151,95 @@ body {
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
   color: white;
   border: none;
+}
+/* matches.html styles */
+#matches-neutral-body {
+  background-image: url("img/secondary-branch-background.jpg"); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+}
+/* HEAVY SIDEBAR CONTENT */
+#offcanvasScrolling {
+  z-index: 1020;
+  padding-top: 4.5em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+#sidebar-button {
+  position: fixed;
+  color: #ffffff33;
+  margin: 70px 0px 0px 10px;
+  z-index: 1000;
+}
+#sidebar-button:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+#sidebar-hide:hover {
+  color: #000000;
+}
+#sidebar-hide {
+  color: #00000033;
+}
+.sidebar-item {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+.profile-pic {
+  width: 80px;
+  border-radius: 100%;
+  margin: auto;
+}
+.card {
+  box-shadow: 0 0 30px #00000088;
+  overflow: hidden;
+  transition: 100ms;
+  margin: 0 20px 0 20px;
+}
+.img1 img {
+  width: 100%;
+}
+.img2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  margin-top: -80px;
+}
+.card:hover .img2 img {
+  border-color: #128eed;
+}
+.main-text {
+  padding: 20px 0;
+  text-align: center;
+}
+.main-text h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+.main-text p {
+  font-size: 16px;
+  padding: 0 35px;
+}
+.socials {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.socials i {
+  font-size: 20px;
+  color: #128eed;
+  padding: 0 10px;
+}
+#card-container {
+  padding-top: 50px;
 }
